@@ -1,0 +1,7 @@
+##### The Problem Docker Solves — "It Works on My Machine"
+
+Imagine you are a chef. You perfect a recipe in your own kitchen using your specific oven, your specific pans, your specific brand of flour, and your specific altitude. You email the recipe to a friend across the country. Your friend follows it exactly but the cake collapses. Why? Because their oven runs 20°F hotter, their flour has a different protein content, and they live at a higher altitude. The recipe is the same, but the environment is different.
+
+Software has this exact problem. A developer writes an application on their Windows laptop with Node.js 20.5, connects it to PostgreSQL 15.2, and uses a specific version of a Linux utility installed system-wide. It runs perfectly. They ship the code to a colleague running Node.js 18, or to a Linux server missing that utility, and it explodes. This is the famous "it works on my machine" problem.
+
+Docker solves this by letting you package your application *along with its entire environment* — the operating system libraries, the runtime, the dependencies, the configuration — into a single portable unit called a **container**. When you ship the container, you are shipping the kitchen, not just the recipe.
